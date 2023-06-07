@@ -13,8 +13,6 @@ public class Tron extends NonBlockingGame {
         game.initialize();
         game.start();
 
-
-        
     }
 
     public Tron(int assignmentNumber, String username, String apiKey, int numRows, int numCols) {
@@ -22,8 +20,8 @@ public class Tron extends NonBlockingGame {
 
         //set game title and description
         //YOUR CODE HERE:
-        setTitle("Ultimate Tron Game");
-        setDescription("Play against a friend!");
+        setTitle("Tron Game");
+        setDescription("Play with a friend!");
 
     }
 
@@ -64,9 +62,9 @@ public class Tron extends NonBlockingGame {
         //draw the background by setting the color of every square on the board
         //YOUR CODE HERE:
 
-        for(int r = 0; r < getBoardHeight(); r++){
+        for(int r = 0; r<getBoardHeight(); r++){
             for(int c = 0; c<getBoardWidth(); c++){
-                setBGColor(r, c, NamedColor.beige);
+                setBGColor(r, c, NamedColor.white);
             }
         }
 
@@ -124,13 +122,13 @@ public class Tron extends NonBlockingGame {
                 //stop the game and change 'color2' to the winning color
                 //YOUR CODE HERE:
                 game = false;
-                color2 = NamedColor.darkred;
+                color2 = NamedColor.green;
             }
             if(dead2) {
                 //stop the game and change 'color1' to the winning color
                 //YOUR CODE HERE:
                 game = false;
-                color2 = NamedColor.darkred;
+                color2 = NamedColor.yellow;
             }
         }
 
